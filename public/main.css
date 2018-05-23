@@ -1,0 +1,334 @@
+html{
+  font-size: 12px!important;
+
+}
+body{
+  font-family: "Proxima Nova";
+  overflow-x: hidden;
+}
+
+#logodiv, h1{
+  font-family: "Proxima Nova";
+  font-weight: lighter!important;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+#logodiv{
+  margin: auto;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#title{
+  font-size: 2.6rem;
+  color: #37393d;
+  font-weight: 600;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+#logo{
+  height: 55px;
+}
+
+header{
+  padding: 0.8em 6em;
+  box-shadow: 0 0px 1px #e0e9f9;
+}
+
+.container-flex{
+  padding: 3em 10vw;
+}
+
+nav{
+  text-align: center;
+}
+
+.navbar-collapse{
+  justify-content: right!important;
+}
+
+nav li, #tabs span{
+  font-size: 1.2rem;
+  width: auto;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  color: #555555;
+  font-weight: normal;
+}
+
+#navbar-toggler{
+  background: none;
+  padding: 3px;
+  border: none;
+  box-shadow: none;
+}
+
+#navbar-toggler:focus{
+  outline: none;
+}
+
+ul{
+  list-style-type: none;
+}
+
+#schedule_demo{
+  border: 1px solid #4190e0;
+  color: #4190e0;
+  border-radius: 20px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+
+#schedule_demo:hover{
+  box-shadow: 0 2px 5px #e0e9f9;
+}
+
+#schedule_demo_2{
+  font-size: 1.5rem;
+  padding: 0.6rem 1rem!important;
+  border: 1px solid white;
+  color: white;
+  border-radius: 20px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+#schedule_demo_2:hover{
+  color: #273de8;
+  background: white;
+}
+
+#automate{
+  margin: 200px 0 200px 0;
+  width: 35%;
+}
+
+#automate h1{
+  font-weight: bold;
+  font-size: 4em;
+}
+
+h1{
+  font-weight: bold;
+  font-size: 3em;
+}
+
+#tabs{
+  text-align: center;
+  cursor: pointer;
+  background: #fbfcfc;
+  padding: 1em;
+  border-bottom: 1px solid #dadfe8;
+  border-top: 1px solid #dadfe8;
+}
+
+#container2{
+  background: #f8fafa;
+}
+
+#feature-section-2{
+  background: white;
+}
+
+.highlighted{
+  color: #4190e0!important;
+}
+
+#container2 .row{
+  padding: 3em 4em;
+}
+
+#container2 h1, #container3 h1{
+  font-size: 3.6rem;
+  font-weight: 100!important;
+}
+
+#container2 p{
+  color: #4a4a4a;
+}
+
+.bullets p{
+  margin: 4px;
+}
+
+.ui.image{
+  width: 90%;
+}
+
+.ui-image-container{
+  padding: 0 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#illustration{
+  width: calc(500px + 20vw);
+  margin-left: 0;
+  top: 80px;
+  position: absolute;
+}
+
+.bullets a{
+  width: 100%;
+}
+
+.feature-section{
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-section .row, .feature-section .row .col-6{
+  margin: 0!important;
+  padding: 0!important;
+}
+
+#tab_indicator{
+  position: absolute;
+  left: calc(51vw - 100px);
+  margin-top: -10px;
+}
+
+#container3 .graphic{
+  width: 120px;
+  margin: 1.5em 1.5em 2em 1.5em;
+}
+
+#container3 .graphic-container{
+  text-align: left;
+  padding: 1.3em!important;
+}
+
+#container3 .row{
+  max-width: 900px;
+  margin: auto;
+}
+
+#container3 h2{
+  font-weight: lighter;
+  font-size: 1.8rem;
+}
+
+#accel-imgs{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+}
+
+#accel-imgs img{
+  margin: auto 8vw;
+}
+
+#container4{
+  background: #f8fafa;
+  text-align: center;
+}
+
+#container5{
+  text-align: center;
+  background: #405CFF;
+  color: white;
+  padding-top: 120px;
+  height: 550px;
+}
+
+#footer_logo{
+  width: 220px;
+  margin-bottom: 1.4em;
+}
+
+#footer-about-us{
+  color: white;
+  font-weight: normal;
+  margin-left: 1em;
+}
+
+
+@media only screen and (max-width:1117px){
+  #container1{
+    display: block;
+  }
+
+  #illustration{
+    position: static;
+    width:76%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -40px;
+  }
+
+  #automate{
+    width: 100%;
+    margin: 4rem 2rem;
+  }
+
+  #img-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  #container3 h2{
+    font-size: 1.4rem;
+  }
+
+  #container3 .graphic{
+    width: 12vw;
+    margin-bottom: 1em!important;
+  }
+
+  #container3 .row{
+    margin-top: 1em;
+  }
+
+}
+
+@media only screen and (max-width: 991px){
+  .feature-section{
+    margin:0 2% !important;
+  }
+
+  #container2 h1{
+    font-size: 2.6rem;
+  }
+
+  .bullets p, .section-text{
+    text-align: left!important;
+  }
+
+  .ui-image-container{
+    margin: 1rem auto 2rem auto;
+  }
+
+  .ui.image{
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width:650px){
+  #illustration{
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width:575px){
+  #container3 .graphic{
+    width: 60%;
+  }
+
+  #accel-imgs{
+    display: block;
+    text-align: center;
+  }
+
+  #accel-imgs img{
+    width: 100%;
+    margin: 2em!important;
+  }
+}

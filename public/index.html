@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Coursedog</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="./main.css" />
+  <link rel="stylesheet" type="text/css" href="./index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="./js/home.js"></script>
+  <script src="./js/panels.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <button id="navbar-toggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="logodiv" class=".navbar-brand text-lg-left text-md-center">
+        <img id="logo" src="logo2.svg" />
+        <span id="title">Coursedog</span>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Platform</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Demos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item" id="schedule_demo">
+            <a class="nav-link" href="#">Schedule Demo</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- <nav class="col-md-9">
+      <a href="#"><span>Platform</span></a>
+      <a href="#"><span>Demos</span></a>
+      <a href="#"><span>About Us</span></a>
+      <a href="#"><span id="schedule_demo">Schedule Demo</span></a>
+      <span id="phone">(646) 853 5446</span>
+    </nav> -->
+  </header>
+  <div class="content">
+    <div class="container-flex" id="container1" style="overflow:hidden">
+      <div class="row">
+        <div id="automate">
+          <h1>Automate it all</h1>
+          <h4>Course scheduling and student planning in one platform</h4>
+        </div>
+        <div id="img-container">
+          <img id="illustration" src="./illustration.png" />
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid" id="tabs">
+      <span onclick="tab(0)" id="0" class="highlighted">Academic Scheduling</span>
+      <span onclick="tab(1)" id="1">Course Planning</span>
+    </div>
+
+    <div class="container-fluid" id="container2">
+      <div class="row">
+        <div>
+          <div class="row feature-section">
+            <div class="col-lg-6 col-12 ui-image-container">
+              <img src="./img/selection6.png" class="ui image">
+            </div>
+            <div class="col-lg-6 col-12">
+              <h1 id="21st_century"> 21st century academic scheduling. </h1>
+              <p class="section-text link-clicked"> Help students explore new fields, learn about classes, make thoughtful choices, and plan their workloads.</p>
+              <div class="row">
+                <div class="col-6">
+                  <div class="bullets">
+                    <p class="section-bullets link-clicked" onclick='changeText(0)' id='line1'><span class="fa fa-chevron-circle-right blue" id = 'arrow1'></span><span class="link">Simple Course Search</span></a>
+                    <p class="section-bullets gray-3" onclick='changeText(1)' id='line2'><i class="fa fa-chevron-circle-right blue hidden" id = 'arrow2'></i><span class="link">Automate pre-req check</span></a>
+                    <p class="section-bullets gray-3" onclick='changeText(2)' id='line3'><i class="fa fa-chevron-circle-right blue hidden"id = 'arrow3'></i><span class="link">Course recommendations</span></a>
+                    <p class="section-bullets gray-3" onclick='changeText(3)' id='line4'><i class="fa fa-chevron-circle-right blue hidden"id = 'arrow4'></i><span class="link">Predict course demand</span></a>
+                    <p class="section-bullets gray-3" onclick='changeText(4)' id='line5'><i class="fa fa-chevron-circle-right blue hidden" id = 'arrow5'></i><span class="link">Automate deadline notifications</span></a>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <p class='section-text link-clicked' id='txtbx1'>Search courses by degree requirements, professor, class times and more.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" id="feature-section-2">
+        <div>
+          <div class="row feature-section">
+            <div class="col-lg-6 col-12 ui-image-container">
+              <img src="./img/student5.png" class="ui image">
+            </div>
+            <div class="col-lg-6 col-12">
+              <h1> Track progress to graduation on one page. </h1>
+              <p class="section-text link-clicked"> Combining the best features from degree audit systems around the country, Coursedog degree audit provides streamlined, accurate information on a students' progress to graduation. </p>
+              <div class="row">
+                <div class="col-6">
+                  <div class="bullets">
+                    <p class="section-bullets link-clicked" onclick='changeText2(0)' id='line6'><span class="fa fa-chevron-circle-right blue" id = 'arrow6' ></span><span class="link">Easy Customization</span></a>
+                    <p class="section-bullets gray-3" onclick='changeText2(1)' id='line7'><i class="fa fa-chevron-circle-right blue hidden" id = 'arrow7'></i><span class="link">Intuitive Editing And Exceptions</span></a>
+                    <p class="section-bullets gray-3" onclick='changeText2(2)' id='line8'><i class="fa fa-chevron-circle-right blue hidden"id = 'arrow8'></i><span class="link">User-Level Permissions</span></a>
+                    <p class="section-bullets gray-3" onclick='changeText2(3)' id='line9'><i class="fa fa-chevron-circle-right blue hidden"id = 'arrow9'></i><span class="link">Find Courses That Satisfy Requirements</span></a>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <p class='section-text link-clicked' id='txtbx2'>Input any requirement. Easy, fast and flexible.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div>
+          <div class="row feature-section">
+            <div class="col-lg-6 col-12 ui-image-container">
+              <img src="./img/advisor5.png" class="ui image">
+            </div>
+            <div class="col-lg-6 col-12 column">
+              <h1 class="text-left">Data insights for advisors.</h1>
+              <p class="section-text link-clicked"> Build stronger, more engaging advisor-student relationships. </p>
+
+              <div class="row">
+                <div class="col-6">
+                  <div class="bullets">
+                    <p class="section-bullets link-clicked" onclick='changeText3(0)' id='line11'><span class="fa fa-chevron-circle-right blue" id = 'arrow11' ></span><span class="link">Comprehensive Student Profiles</span></a>
+                    <p class="section-bullets gray-3" onclick='changeText3(1)' id='line12'><i class="fa fa-chevron-circle-right blue hidden" id = 'arrow12'></i><span class="link">At-Risk Student Alerts</span></a>
+                    <p class="section-bullets gray-3" onclick='changeText3(2)' id='line13'><i class="fa fa-chevron-circle-right blue hidden"id = 'arrow13'></i><span class="link">Note Sharing &nbsp &nbsp</span></a>
+                    <p class="section-bullets gray-3" onclick='changeText3(3)' id='line14'><i class="fa fa-chevron-circle-right blue hidden"id = 'arrow14'></i><span class="link">Forum For Advisors</span></a>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <p class='section-text link-clicked' id='txtbx3'>See relevant, important information about advisees on a modern dashboard.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-flex" id="container3">
+      <h1>10x return on investment</h1>
+      <div class="row">
+        <div class="col-4 graphic-container">
+          <img class="graphic" src="SIS.svg"/>
+          <h2>Full SIS integration</h2>
+        </div>
+        <div class="col-4 graphic-container">
+          <img class="graphic" src="savings.svg"/>
+          <h2>Efficiency savings</h2>
+        </div>
+        <div class="col-4 graphic-container">
+          <img class="graphic" src="graduation.svg"/>
+          <h2>Boost on-time graduation and satisfaction</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-flex" id="container4">
+      <div id="accel-imgs">
+        <h4><img class="ui image uni-img" onclick="window.location.href='https://www.pomonaventures.com/'" src='./img/p_ventures.png'></h4>
+        <h4><img class="ui image uni-img" src="./img/alma.png"style="background-color:#75AADB;" onclick="window.location.href='http://www.alma.works/'" ></h4>
+      </div>
+    </div>
+    <div id="container5">
+      <img id="footer_logo" src="footer_logo.svg"/>
+      <h1 style="text-align:center">Will Coursedog help my campus?</h1>
+      <br>
+      <a href="#"><span id="schedule_demo_2">Schedule Demo</span></a>
+      <p style="padding-top:100px;font-size:1.1rem">© 2018 Coursedog Inc. All rights reserved.<a id="footer-about-us" href="#">About us</a></p>
+    </div>
+
+  </div>
+
+
+</body>
+
+</html>
